@@ -700,3 +700,28 @@ footer > a:last-child {
     transition-duration: 0.01ms !important;
   }
 }
+.language-btn {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cyan);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 10px 13px;
+  cursor: pointer;
+  transition: .25s ease;
+  flex-shrink: 0;
+}
+
+.language-btn:hover {
+  border-color: var(--cyan);
+  background: #6ceaff12;
+}
+
+@media (max-width: 520px) {
+  .language-btn {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
