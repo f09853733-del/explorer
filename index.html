@@ -4,159 +4,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="کاوشگر جهان؛ سفری به اعماق فضا و منظومه شمسی">
-  <title>کاوشگر جهان | Cosmos Explorer</title>
+  <meta name="theme-color" content="#050816">
+  <meta name="description" content="با Cosmos Explorer به کاوش سیاره‌ها و شگفتی‌های جهان بپردازید.">
+  <title>COSMOS EXPLORER | کاوشگر جهان</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="stars" aria-hidden="true"></div>
 
   <header class="navbar">
-    <a class="logo" href="#">🌌
-      <span data-fa="کاوشگر جهان" data-en="Cosmos Explorer">
-        کاوشگر جهان
-      </span>
-    </a>
-
+    <a class="logo" href="#">COSMOS<span>.</span></a>
     <nav>
-      <a href="#home" data-fa="خانه" data-en="Home">خانه</a>
-      <a href="#about" data-fa="درباره جهان" data-en="About Space">درباره جهان</a>
-      <a href="#planets" data-fa="سیاره‌ها" data-en="Planets">سیاره‌ها</a>
+      <a href="#home">خانه</a>
+      <a href="#planets">سیاره‌ها</a>
+      <a href="#mission">مأموریت</a>
     </nav>
-
-    <button id="language-toggle" class="lang-btn"
-      type="button" aria-label="Change language">
-      EN
-    </button>
+    <a href="#planets" class="nav-btn">شروع کاوش ↗</a>
   </header>
 
   <main>
-    <section id="home" class="hero">
+    <section class="hero" id="home">
       <div class="hero-content">
-        <p class="eyebrow"
-          data-fa="فراتر از مرزهای شناخته‌شده"
-          data-en="Beyond the Known">
-          فراتر از مرزهای شناخته‌شده
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          سیستم کاوش فضایی فعال است
+        </div>
+
+        <h1>فراتر از<br> <span>مرزهای جهان</span></h1>
+
+        <p>
+          به ناشناخته‌ها سفر کن؛ از سیاره‌های شگفت‌انگیز
+          تا رازهای بی‌پایان کهکشان.
+          جهان منتظر کشف شدن است.
         </p>
 
-        <h1 data-fa="به جهان بی‌پایان خوش آمدید"
-            data-en="Welcome to the Infinite Universe">
-          به جهان بی‌پایان خوش آمدید
-        </h1>
+        <div class="hero-actions">
+          <a href="#planets" class="primary-btn">🚀 شروع مأموریت</a>
+          <a href="#mission" class="secondary-btn">درباره کاوش ←</a>
+        </div>
 
-        <p data-fa="سفری شگفت‌انگیز به اعماق فضا، کهکشان‌ها و سیاره‌های منظومه شمسی را آغاز کنید."
-           data-en="Begin an incredible journey through deep space, distant galaxies, and the planets of our solar system.">
-          سفری شگفت‌انگیز به اعماق فضا، کهکشان‌ها و سیاره‌های منظومه شمسی را آغاز کنید.
-        </p>
+        <div class="stats">
+          <div><strong>۸</strong><span>سیاره اصلی منظومه شمسی</span></div>
+          <div><strong>۱۰۰B+</strong><span>کهکشان تخمینی در جهان قابل مشاهده</span></div>
+          <div><strong>∞</strong><span>راز کشف‌نشده</span></div>
+        </div>
+      </div>
 
-        <a href="#planets" class="explore-btn"
-          data-fa="شروع کاوش 🚀"
-          data-en="Start Exploring 🚀">
-          شروع کاوش 🚀
-        </a>
+      <div class="solar-system" aria-label="نمای گرافیکی منظومه شمسی">
+        <div class="orbit orbit-one"><i class="planet mercury"></i></div>
+        <div class="orbit orbit-two"><i class="planet venus"></i></div>
+        <div class="orbit orbit-three"><i class="planet earth"></i></div>
+        <div class="orbit orbit-four"><i class="planet mars"></i></div>
+        <div class="orbit orbit-five"><i class="planet jupiter"></i></div>
+        <div class="sun"></div>
+        <div class="space-label">SOLAR SYSTEM <span>01 / 08</span></div>
       </div>
     </section>
 
-    <section id="about" class="about section">
-      <h2 data-fa="جهان؛ اقیانوسی از شگفتی‌ها"
-          data-en="The Universe: An Ocean of Wonders">
-        جهان؛ اقیانوسی از شگفتی‌ها
-      </h2>
+    <section class="planets-section" id="planets">
+      <div class="section-heading">
+        <div>
+          <span class="section-tag">DATABASE / PLANETS</span>
+          <h2>مقصد بعدی تو کجاست؟</h2>
+          <p>یک جهان را انتخاب کن و اطلاعاتش را کشف کن.</p>
+        </div>
+        <span class="planet-count">۰۱ — ۰۸</span>
+      </div>
 
-      <p data-fa="جهان شامل میلیاردها کهکشان، ستاره‌ها، سیاره‌ها و اجرام آسمانی است. هر کشف علمی، پنجره‌ای تازه به سوی ناشناخته‌ها باز می‌کند."
-         data-en="The universe contains billions of galaxies, stars, planets, and celestial objects. Every scientific discovery opens a new window into the unknown.">
-        جهان شامل میلیاردها کهکشان، ستاره‌ها، سیاره‌ها و اجرام آسمانی است. هر کشف علمی، پنجره‌ای تازه به سوی ناشناخته‌ها باز می‌کند.
-      </p>
+      <div class="planet-grid" id="planetGrid"></div>
+
+      <div class="planet-details" id="planetDetails" aria-live="polite">
+        <span class="section-tag">MISSION INTEL</span>
+        <h3 id="detailName">زمین | خانه ما</h3>
+        <p id="detailDescription">
+          سیاره‌ای که تاکنون تنها میزبان شناخته‌شده حیات است.
+        </p>
+        <div class="detail-facts">
+          <div><span>قطر</span><strong id="detailDiameter">12,742 km</strong></div>
+          <div><span>سال سیاره</span><strong id="detailYear">365 روز</strong></div>
+          <div><span>قمر شناخته‌شده</span><strong id="detailMoons">۱</strong></div>
+        </div>
+      </div>
     </section>
 
-    <section id="planets" class="section planets-section">
-      <h2 data-fa="سیاره‌های منظومه شمسی"
-          data-en="Planets of the Solar System">
-        سیاره‌های منظومه شمسی
-      </h2>
-
-      <div class="planet-grid">
-
-        <article class="planet-card">
-          <div class="planet-icon mercury">☿</div>
-          <h3 data-fa="عطارد" data-en="Mercury">عطارد</h3>
-          <p data-fa="نزدیک‌ترین سیاره به خورشید"
-             data-en="The closest planet to the Sun">
-            نزدیک‌ترین سیاره به خورشید
-          </p>
-        </article>
-
-        <article class="planet-card">
-          <div class="planet-icon venus">♀</div>
-          <h3 data-fa="زهره" data-en="Venus">زهره</h3>
-          <p data-fa="داغ‌ترین سیاره منظومه شمسی"
-             data-en="The hottest planet in the solar system">
-            داغ‌ترین سیاره منظومه شمسی
-          </p>
-        </article>
-
-        <article class="planet-card">
-          <div class="planet-icon earth">🌍</div>
-          <h3 data-fa="زمین" data-en="Earth">زمین</h3>
-          <p data-fa="خانه ما و تنها جهان شناخته‌شده دارای حیات"
-             data-en="Our home and the only known world with life">
-            خانه ما و تنها جهان شناخته‌شده دارای حیات
-          </p>
-        </article>
-
-        <article class="planet-card">
-          <div class="planet-icon mars">🔴</div>
-          <h3 data-fa="مریخ" data-en="Mars">مریخ</h3>
-          <p data-fa="سیاره سرخ و مقصد مهم کاوش‌های فضایی"
-             data-en="The Red Planet and a major target of space exploration">
-            سیاره سرخ و مقصد مهم کاوش‌های فضایی
-          </p>
-        </article>
-
-        <article class="planet-card">
-          <div class="planet-icon jupiter">🪐</div>
-          <h3 data-fa="مشتری" data-en="Jupiter">مشتری</h3>
-          <p data-fa="بزرگ‌ترین سیاره منظومه شمسی"
-             data-en="The largest planet in the solar system">
-            بزرگ‌ترین سیاره منظومه شمسی
-          </p>
-        </article>
-
-        <article class="planet-card">
-          <div class="planet-icon saturn">🪐</div>
-          <h3 data-fa="زحل" data-en="Saturn">زحل</h3>
-          <p data-fa="جهانی زیبا با حلقه‌های چشمگیر"
-             data-en="A beautiful world with spectacular rings">
-            جهانی زیبا با حلقه‌های چشمگیر
-          </p>
-        </article>
-
-        <article class="planet-card">
-          <div class="planet-icon uranus">🔵</div>
-          <h3 data-fa="اورانوس" data-en="Uranus">اورانوس</h3>
-          <p data-fa="غولی یخی با چرخشی غیرمعمول"
-             data-en="An ice giant with an unusual rotation">
-            غولی یخی با چرخشی غیرمعمول
-          </p>
-        </article>
-
-        <article class="planet-card">
-          <div class="planet-icon neptune">🔵</div>
-          <h3 data-fa="نپتون" data-en="Neptune">نپتون</h3>
-          <p data-fa="جهانی دوردست با بادهای بسیار شدید"
-             data-en="A distant world with extremely powerful winds">
-            جهانی دوردست با بادهای بسیار شدید
-          </p>
-        </article>
-
-      </div>
+    <section class="mission" id="mission">
+      <div class="mission-orb">✦</div>
+      <span class="section-tag">YOUR NEXT ADVENTURE</span>
+      <h2>جهان هنوز پر از راز است.</h2>
+      <p>هر کلیک، قدمی تازه به سوی ناشناخته‌هاست.</p>
+      <button class="primary-btn" id="missionBtn">آغاز کاوش جدید ↗</button>
+      <p class="mission-message" id="missionMessage" aria-live="polite"></p>
     </section>
   </main>
 
   <footer>
-    <p data-fa="© کاوشگر جهان | سفری به سوی ناشناخته‌ها"
-       data-en="© Cosmos Explorer | A Journey into the Unknown">
-      © کاوشگر جهان | سفری به سوی ناشناخته‌ها
-    </p>
+    <a class="logo" href="#home">COSMOS<span>.</span></a>
+    <p>ساخته‌شده برای کنجکاوان جهان · ۲۰۲۶</p>
+    <a href="#home">بازگشت به بالا ↑</a>
   </footer>
 
   <script src="script.js"></script>
